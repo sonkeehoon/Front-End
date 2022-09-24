@@ -66,3 +66,6 @@ ex)
 .box:hover {
 	transform: rotate(360deg);
 }
+
+활용가치가 높아보이는 Loading Spinner
+
