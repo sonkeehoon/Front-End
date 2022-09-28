@@ -15,15 +15,24 @@
         <button type="button" onclick="document.querySelector('#date').innerHTML=Date()" class="date">날짜 및 시간</button>
         <p id="date"></p>
         <div>
-            <input type="button" value="야간 모드" class="mode" onclick="document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='white';">
-            <input type="button" value="주간 모드" class="mode" onclick="document.querySelector('body').style.backgroundColor='bisque';
-            document.querySelector('body').style.color='black';">
-        </div><br>
+            <input type="button" class="night_day" value="night mode" onclick="
+            var target = document.querySelector('body')
+            
+            if (this.value === 'night mode'){
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                this.value='day mode';
+            } else {
+                target.style.backgroundColor='bisque';
+                target.style.color='black';
+                this.value='night mode';
+            }   
+        ">
+        </div>
         <hr>
         
 
-        <div class="ITZY MEMBER">ITZY MEMBER</div><br>
+        <a id="ITZYMEM">ITZY MEMBER</a><br><br>
 
         <input type="checkbox" value="Yeji"><a class="itzy" name="Yeji"> 예지 </a><br>
         <img title="예지" src="yeji.jpg" width="300" height="550"><br>
@@ -63,11 +72,25 @@
 
         
         <br><br><hr>
-        <p class="recent">있지 최근활동</p><br><br>
+        <p id="recent">있지 최근활동</p><br><br>
         <iframe width="700" height="500" src="https://www.youtube.com/embed/Hbb5GPxXF1w" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
+        <br><br>
+        <div>
+            <input type="button" class="night_day" value="night mode" onclick="
+            if (this.value === 'night mode'){
+                document.querySelector('body').style.backgroundColor = 'black';
+                document.querySelector('body').style.color = 'white';
+                this.value='day mode';
+            } else {
+                document.querySelector('body').style.backgroundColor='bisque';
+                document.querySelector('body').style.color='black';
+                this.value='night mode';
+            }   
+        ">
+        </div>
 
     </body>
 </html>

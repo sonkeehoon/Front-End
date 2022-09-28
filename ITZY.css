@@ -20,7 +20,7 @@ body {
 }
 
 
-.ITZY{
+#ITZYMEM{
     font-weight: bold;
     font-size:20px;
 }
@@ -30,6 +30,7 @@ body {
     font-size: 15px;
     text-align: center;
     padding :3px 6px;
+    font-weight: bold;
 }
 /* a[name=Yeji]:hover{
     background-color:chartreuse;
@@ -42,7 +43,6 @@ body {
     font-size: 20px;
     font-weight: normal; */
     text-align: center;
-    color:black;
     /* width: 500px; */
 }
 #title2 {
@@ -65,6 +65,9 @@ body {
     font-size: 150%;
 }
 
+#name{
+    font-weight: bold;
+}
 
 
 .submit{
@@ -92,7 +95,7 @@ body {
     padding: 4px 8px;
 }
 
-.recent {
+#recent {
     background-color: #f770b3;
     color:white;
     border-radius: 4px;
@@ -101,17 +104,17 @@ body {
     display: inline-block;
 
 }
-.recent:hover {
+#recent:hover {
     background-color:cornflowerblue;
     transition: all 1.5s;
 }
 
-.mode{
+.night_day{
     background:#f770b3;
     color:white;
     font-size: 12px;
-    margin: 25px;
-    padding: 5px 10px;
+    /* margin: 5px; */
+    padding: 5px 5px;
     border-radius: 4px;
     border-color:white;
 }
