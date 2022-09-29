@@ -2,32 +2,25 @@
 <html lang="kr">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="color.js"></script>
+        <link rel="stylesheet" href="ITZY.css">
+        <meta http-equiv="X-UA-Compatible" content="Chrome">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ITZY LOVE </title>
-        <link rel="stylesheet" href="ITZY.css">
     </head>
 
-
     <body>
-        <a id="title">ITZY Fan 투표</a><br>
-        <a id="title2"> 좋아하는 ITZY 멤버에게 투표해 주세요! (중복 선택 가능)<br><br></a>
+        <header>
+            <a id="title">ITZY Fan 투표</a><br>
+            <a id="title2"> 좋아하는 ITZY 멤버에게 투표해 주세요! (중복 선택 가능)<br><br></a>
+        </header>
         <button type="button" onclick="document.querySelector('#date').innerHTML=Date()" class="date">날짜 및 시간</button>
         <p id="date"></p>
         <div>
             <input type="button" class="night_day" value="night mode" onclick="
-            var target = document.querySelector('body')
-            
-            if (this.value === 'night mode'){
-                target.style.backgroundColor = 'black';
-                target.style.color = 'white';
-                this.value='day mode';
-            } else {
-                target.style.backgroundColor='bisque';
-                target.style.color='black';
-                this.value='night mode';
-            }   
-        ">
+            nightDayHandler(this);
+            ">
         </div>
         <hr>
         
@@ -80,15 +73,7 @@
         <br><br>
         <div>
             <input type="button" class="night_day" value="night mode" onclick="
-            if (this.value === 'night mode'){
-                document.querySelector('body').style.backgroundColor = 'black';
-                document.querySelector('body').style.color = 'white';
-                this.value='day mode';
-            } else {
-                document.querySelector('body').style.backgroundColor='bisque';
-                document.querySelector('body').style.color='black';
-                this.value='night mode';
-            }   
+            nightDayHandler(this);
         ">
         </div>
 
