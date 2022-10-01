@@ -21,3 +21,6 @@ var Body={
             self.value='night mode';
         }
     }
+function ShowDate(){
+    document.querySelector('#date').innerHTML=Date()
+}
