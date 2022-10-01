@@ -1,4 +1,6 @@
 
+유용한 객체 document, DOM(Document Object Model), window, ajax, cookie, offline web application, webRTC, speech, webGL, webVR
+
 text-align은 텍스트의 좌,우,중앙 정렬 property
     text-align: right;
 line-height는 문장 사이의 간격을 조정하는 property
