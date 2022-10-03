@@ -9,18 +9,29 @@ var Body={
         }
 
 
-        function nightDayHandler(self){
-            
-        if (self.value === 'night mode'){
-            Body.setColor('white');
-            Body.setBgColor('black');
-            self.value='day mode';
-        } else {
-            Body.setColor('black');
-            Body.setBgColor('bisque');
-            self.value='night mode';
-        }
+function nightDayHandler(self){
+        
+    if (self.value === 'night mode'){
+        Body.setColor('white');
+        Body.setBgColor('black');
+        self.value='day mode';
+    } else {
+        Body.setColor('black');
+        Body.setBgColor('bisque');
+        self.value='night mode';
     }
-function ShowDate(){
+}
+
+function showDate(){
     document.querySelector('#date').innerHTML=Date()
 }
+
+function setBtnDisable(self){
+    // var btn=document.getElementById("submit_btn");
+    var btn=document.getElementById(self.id);
+
+        btn.disabled="disabled";
+        btn.style.backgroundColor="grey"
+}
+
+var target=document.getElementsByClassName('CoreText-sc-cpl358-0-fntqRM');

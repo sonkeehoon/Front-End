@@ -15,7 +15,7 @@
             <a id="title">ITZY Fan 투표</a><br>
             <a id="title2"> 좋아하는 ITZY 멤버에게 투표해 주세요! (중복 선택 가능)<br><br></a>
         </header>
-        <button type="button" onclick="ShowDate()" class="date">날짜 및 시간</button>
+        <button type="button" onclick="showDate()" class="date">날짜 및 시간</button>
         <p id="date"></p>
         <div>
             <input type="button" class="night_day" value="night mode" onclick="
@@ -48,7 +48,10 @@
             <input type="text" id="name">
         </div>
 
-        <input type="button" class="submit" value="제출" onclick='document.getElementById("submit").innerHTML="참여완료";alert("투표 감사합니다!")'>
+        <input type="button" class="submit" id="submit_btn" value="제출" onclick='
+        document.getElementById("submit").innerHTML="참여완료";
+        alert("투표 감사합니다!");        
+        setBtnDisable(this);'>
         <p id="submit"></p>
 
         <br><hr><br>
