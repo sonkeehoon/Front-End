@@ -24,35 +24,37 @@
         </div>
         <hr>
         
+        <form name="vote" method="post" action="vote.php">
+            <a id="ITZYMEM">ITZY MEMBER</a><br><br>
 
-        <a id="ITZYMEM">ITZY MEMBER</a><br><br>
+            <input type="checkbox" value="Yeji" name="fav[]"><a class="itzy" name="Yeji"> 예지 </a><br>
+            <img title="예지" src="yeji.jpg" width="300" height="550"><br>
+            <hr><br>
+            <input type="checkbox" value="Lia" name="fav[]"><a class="itzy" name="Lia"> 리아 </a><br>
+            <img title="리아" src="lia.jpg" width="350"><br>
+            <hr><br>
+            <input type="checkbox" value="Ryujin" name="fav[]" ><a class="itzy" name="Ryujin"> 류진 </a><br>
+            <img title="류진" src="ryujin.jpg">
+            <hr><br>
+            <input type="checkbox" value="Chaeryeong" name="fav[]"> <a class="itzy" name="Chaeryeong"> 채령 </a><br>
+            <img title="채령" src="chaeryeong.jpg">
+            <hr><br>
+            <input type="checkbox" value="Yuna" name="fav[]" > <a class="itzy" name="Yuna"> 유나 </a><br>
+            <img title="유나" src="yuna.jpg">
+            <br><br>
 
-        <input type="checkbox" value="Yeji"><a class="itzy" name="Yeji"> 예지 </a><br>
-        <img title="예지" src="yeji.jpg" width="300" height="550"><br>
-        <hr><br>
-        <input type="checkbox" value="Lia" ><a class="itzy" name="Lia"> 리아 </a><br>
-        <img title="리아" src="lia.jpg" width="350"><br>
-        <hr><br>
-        <input type="checkbox" value="Ryujin" ><a class="itzy" name="Ryujin"> 류진 </a><br>
-        <img title="류진" src="ryujin.jpg">
-        <hr><br>
-        <input type="checkbox" value="Chaeryeong" > <a class="itzy" name="Chaeryeong"> 채령 </a><br>
-        <img title="채령" src="chaeryeong.jpg">
-        <hr><br>
-        <input type="checkbox" value="Yuna" > <a class="itzy" name="Yuna"> 유나 </a><br>
-        <img title="유나" src="yuna.jpg">
-        <br><br>
+            <div id="name" >
+                <a>이름 (선택사항) : </a>
+                <input type="text" id="name" size="10">
+            </div>
 
-        <div id="name" >
-            <a>이름 (선택사항) : </a>
-            <input type="text" id="name">
-        </div>
+            <input type="submit" class="submit" id="submit_btn" value="제출" onclick='
+            document.getElementById("submit").innerHTML="참여완료";
+            alert("투표 감사합니다!");        
+            setBtnDisable(this);'>
+            <p id="submit"></p>
+        </form>
 
-        <input type="button" class="submit" id="submit_btn" value="제출" onclick='
-        document.getElementById("submit").innerHTML="참여완료";
-        alert("투표 감사합니다!");        
-        setBtnDisable(this);'>
-        <p id="submit"></p>
 
         <br><hr><br>
 
