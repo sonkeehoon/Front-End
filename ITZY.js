@@ -34,4 +34,7 @@ function setBtnDisable(self){
         btn.style.backgroundColor="grey"
 }
 
-var target=document.getElementsByClassName('CoreText-sc-cpl358-0-fntqRM');
+function onFocusHandler(){
+    var input=document.getElementById("name");
+    input.value='';
+}
