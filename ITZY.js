@@ -4,6 +4,7 @@ var Body={
                 $('body').css('color',color);
             },
             setBgColor : function (color){
+                // document.querySelector('body').style.backgroundColor = color;
                 $('body').css('backgroundColor',color);
             }
         }
